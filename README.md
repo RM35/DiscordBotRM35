@@ -7,3 +7,5 @@ Additional Required Files
 
 quote.csv with quotes in the format Name,Quote
 TOKEN.env file with the DISCORD_TOKEN for your bot
+
+Sound playing requires the opus library within the main directory and ffmpeg installed.
