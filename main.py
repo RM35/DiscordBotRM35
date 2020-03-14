@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 from quote import get_quote,get_random_name
 from discord import opus
 import asyncio
-import random
 
 ##############################
 
@@ -36,7 +35,6 @@ async def on_ready():
     
 @client.event
 async def on_message(message):
-	
 	if message.content.startswith("!quote"):
 		msg = message.content
 		x = msg.split()
@@ -52,8 +50,7 @@ async def on_message(message):
 				await message.channel.send(member_voice_state)
 			else:
 				await message.channel.send('You are not in a voice channel.')
-
-	if message.content.startswith("!sound"):
+	if message.content.startswith("sound"):
 		await play_sound('example.mp3',message.author.voice)
 
 client.run(TOKEN)
