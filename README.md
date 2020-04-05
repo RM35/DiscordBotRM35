@@ -1,11 +1,15 @@
 # DiscordBotRM35
 
-Discord bot with functionality to read quotes from a .csv file and send as 
-messages into the message channel where the !quote command was sent.
+Discord bot with following functionality:
 
-Additional Required Files
+Read quotes from .csv and send to a given Discord channel.
+Play .mp3 files in the requesting users Discord Voice channel.
+Return Current BBC News front page stories using BeautifulSoup to the given Discord text channel.
 
-quote.csv with quotes in the format Name,Quote
-TOKEN.env file with the DISCORD_TOKEN for your bot
+Requirements:
 
-Sound playing requires the opus library within the main directory and ffmpeg installed.
+TOKEN.env file containing the discord bot API Key
+opus audio codec .dll 
+ffmpeg installed on the host 
+
+
